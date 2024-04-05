@@ -39,6 +39,26 @@
 
   </mat-form-field>
 
+  <mat-form-field>
+
+    <mat-label>Release date</mat-label>
+    <input matInput formControlName="releasedAt" [matDatepicker]="releasedAtPicker">
+
+    <mat-datepicker-toggle matSuffix [for]="releasedAtPicker"></mat-datepicker-toggle>
+
+    <mat-datepicker #releasedAtPicker [dateClass]="dateClass"></mat-datepicker>
+
+  </mat-form-field>
+
+  <mat-checkbox color="primary" indeterminate="true">Downloads allowed?</mat-checkbox>
+
+  <mat-form-field>
+
+    <mat-label>Description</mat-label>
+    <textarea matInput formControlName="longDescription" cdkTextareaAutosize="true"></textarea>
+
+  </mat-form-field>
+
 </div>
 
 

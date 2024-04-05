@@ -3,3 +3,11 @@
 
 @import "@angular/material/prebuilt-themes/indigo-pink.css";
 
+.mat-calendar-body-cell.highlight-date {
+  background: red;
+}
+
+.mat-mdc-paginator-outer-container .mat-mdc-paginator-container {
+  display: flex;
+  justify-content: space-between;
+}
